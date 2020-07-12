@@ -1,340 +1,107 @@
-<html __fvdsurfcanyoninserted="1" class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone"><head>
-        <meta charset="UTF-8">
-        <title>Happy Birthday</title>
-        <style>
-            /* If you can't see it just hit space in here*/
-            body {
-                font-family:'Wendy One', sans-serif;
-            }
-			
-			body {
-  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
-  background-image: -webkit-radial-gradient(#374566, #010203);
-  background-image: -moz-radial-gradient(#374566, #010203);
-  background-image: -o-radial-gradient(#374566, #010203);
-  background-image: radial-gradient(#374566, #010203);
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
 }
-            span {
-                text-transform: uppercase;
-            }
-            .container {
-                width: 100%;
-                height: 100%;
-                padding: 10px;
-                margin: 0 auto;
-                position: relative;
-            }
-            .balloon {
-                width: 738px;
-                margin: 0 auto;
-                padding-top: 200px;
-                position: relative;
-            }
-            .balloon > div {
-                width: 104px;
-                height: 140px;
-                background: rgba(182, 15, 97, 0.9);
-                border-radius: 0;
-                border-radius: 80% 80% 80% 80%;
-                margin: 0 auto;
-                position: absolute;
-                padding: 10px;
-                box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
-                -webkit-transform-origin: bottom center;
-            }
-            .balloon > div:nth-child(1) {
-                background: rgba(182, 15, 97, 0.9);
-                left: 0;
-                box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
-                -webkit-animation: balloon1 6s ease-in-out infinite;
-                -moz-animation: balloon1 6s ease-in-out infinite;
-                -o-animation: balloon1 6s ease-in-out infinite;
-                animation: balloon1 6s ease-in-out infinite;
-            }
-            .balloon > div:nth-child(1):before {
-                color: rgba(182, 15, 97, 0.9);
-            }
-            .balloon > div:nth-child(2) {
-                background: rgba(242, 112, 45, 0.9);
-                left: 120px;
-                box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
-                -webkit-animation: balloon2 6s ease-in-out infinite;
-                -moz-animation: balloon2 6s ease-in-out infinite;
-                -o-animation: balloon2 6s ease-in-out infinite;
-                animation: balloon2 6s ease-in-out infinite;
-            }
-            .balloon > div:nth-child(2):before {
-                color: rgba(242, 112, 45, 0.9);
-            }
-            .balloon > div:nth-child(3) {
-                background: rgba(45, 181, 167, 0.9);
-                left: 240px;
-                box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
-                -webkit-animation: balloon4 6s ease-in-out infinite;
-                -moz-animation: balloon4 6s ease-in-out infinite;
-                -o-animation: balloon4 6s ease-in-out infinite;
-                animation: balloon4 6s ease-in-out infinite;
-            }
-            .balloon > div:nth-child(3):before {
-                color: rgba(45, 181, 167, 0.9);
-            }
-            .balloon > div:nth-child(4) {
-                background: rgba(190, 61, 244, 0.9);
-                left: 360px;
-                box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
-                -webkit-animation: balloon1 5s ease-in-out infinite;
-                -moz-animation: balloon1 5s ease-in-out infinite;
-                -o-animation: balloon1 5s ease-in-out infinite;
-                animation: balloon1 5s ease-in-out infinite;
-            }
-            .balloon > div:nth-child(4):before {
-                color: rgba(190, 61, 244, 0.9);
-            }
-            .balloon > div:nth-child(5) {
-                background: rgba(180, 224, 67, 0.9);
-                left: 480px;
-                box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
-                -webkit-animation: balloon3 5s ease-in-out infinite;
-                -moz-animation: balloon3 5s ease-in-out infinite;
-                -o-animation: balloon3 5s ease-in-out infinite;
-                animation: balloon3 5s ease-in-out infinite;
-            }
-            .balloon > div:nth-child(5):before {
-                color: rgba(180, 224, 67, 0.9);
-            }
-            .balloon > div:nth-child(6) {
-                background: rgba(242, 194, 58, 0.9);
-                left: 600px;
-                box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
-                -webkit-animation: balloon2 3s ease-in-out infinite;
-                -moz-animation: balloon2 3s ease-in-out infinite;
-                -o-animation: balloon2 3s ease-in-out infinite;
-                animation: balloon2 3s ease-in-out infinite;
-            }
-            .balloon > div:nth-child(6):before {
-                color: rgba(242, 194, 58, 0.9);
-            }
-            .balloon > div:before {
-                color: rgba(182, 15, 97, 0.9);
-                position: absolute;
-                bottom: -11px;
-                left: 52px;
-                content:"▲";
-                font-size: 1em;
-            }
-            span {
-                font-size: 4.8em;
-                color: white;
-                position: relative;
-                top: 30px;
-                left: 50%;
-                margin-left: -27px;
-            }
-            /*BALLOON 1 4*/
-            @-webkit-keyframes balloon1 {
-                0%, 100% {
-                    -webkit-transform: translateY(0) rotate(-6deg);
-                }
-                50% {
-                    -webkit-transform: translateY(-20px) rotate(8deg);
-                }
-            }
-            @-moz-keyframes balloon1 {
-                0%, 100% {
-                    -moz-transform: translateY(0) rotate(-6deg);
-                }
-                50% {
-                    -moz-transform: translateY(-20px) rotate(8deg);
-                }
-            }
-            @-o-keyframes balloon1 {
-                0%, 100% {
-                    -o-transform: translateY(0) rotate(-6deg);
-                }
-                50% {
-                    -o-transform: translateY(-20px) rotate(8deg);
-                }
-            }
-            @keyframes balloon1 {
-                0%, 100% {
-                    transform: translateY(0) rotate(-6deg);
-                }
-                50% {
-                    transform: translateY(-20px) rotate(8deg);
-                }
-            }
-            /* BAllOON 2 5*/
-            @-webkit-keyframes balloon2 {
-                0%, 100% {
-                    -webkit-transform: translateY(0) rotate(6eg);
-                }
-                50% {
-                    -webkit-transform: translateY(-30px) rotate(-8deg);
-                }
-            }
-            @-moz-keyframes balloon2 {
-                0%, 100% {
-                    -moz-transform: translateY(0) rotate(6deg);
-                }
-                50% {
-                    -moz-transform: translateY(-30px) rotate(-8deg);
-                }
-            }
-            @-o-keyframes balloon2 {
-                0%, 100% {
-                    -o-transform: translateY(0) rotate(6deg);
-                }
-                50% {
-                    -o-transform: translateY(-30px) rotate(-8deg);
-                }
-            }
-            @keyframes balloon2 {
-                0%, 100% {
-                    transform: translateY(0) rotate(6deg);
-                }
-                50% {
-                    transform: translateY(-30px) rotate(-8deg);
-                }
-            }
-            /* BAllOON 0*/
-            @-webkit-keyframes balloon3 {
-                0%, 100% {
-                    -webkit-transform: translate(0, -10px) rotate(6eg);
-                }
-                50% {
-                    -webkit-transform: translate(-20px, 30px) rotate(-8deg);
-                }
-            }
-            @-moz-keyframes balloon3 {
-                0%, 100% {
-                    -moz-transform: translate(0, -10px) rotate(6eg);
-                }
-                50% {
-                    -moz-transform: translate(-20px, 30px) rotate(-8deg);
-                }
-            }
-            @-o-keyframes balloon3 {
-                0%, 100% {
-                    -o-transform: translate(0, -10px) rotate(6eg);
-                }
-                50% {
-                    -o-transform: translate(-20px, 30px) rotate(-8deg);
-                }
-            }
-            @keyframes balloon3 {
-                0%, 100% {
-                    transform: translate(0, -10px) rotate(6eg);
-                }
-                50% {
-                    transform: translate(-20px, 30px) rotate(-8deg);
-                }
-            }
-            /* BAllOON 3*/
-            @-webkit-keyframes balloon4 {
-                0%, 100% {
-                    -webkit-transform: translate(10px, -10px) rotate(-8eg);
-                }
-                50% {
-                    -webkit-transform: translate(-15px, 20px) rotate(10deg);
-                }
-            }
-            @-moz-keyframes balloon4 {
-                0%, 100% {
-                    -moz-transform: translate(10px, -10px) rotate(-8eg);
-                }
-                50% {
-                    -moz-transform: translate(-15px, 10px) rotate(10deg);
-                }
-            }
-            @-o-keyframes balloon4 {
-                0%, 100% {
-                    -o-transform: translate(10px, -10px) rotate(-8eg);
-                }
-                50% {
-                    -o-transform: translate(-15px, 10px) rotate(10deg);
-                }
-            }
-            @keyframes balloon4 {
-                0%, 100% {
-                    transform: translate(10px, -10px) rotate(-8eg);
-                }
-                50% {
-                    transform: translate(-15px, 10px) rotate(10deg);
-                }
-            }
-            h1 {
-                position: relative;
-                top: 200px;
-                text-align: center;
-                color: white;
-                font-size: 13.5em;
-            }
-			 h2 {
-                position: relative;
-                top: 240px;
-                text-align: center;
-                color: white;
-                font-size: 6.5em;
-            }
-        </style>
-        <script>
-            window.open = function() {};
-            window.print = function() {};
-            // Support hover state for mobile.
-            if (false) {
-                window.ontouchstart = function() {};
-            }
-        </script>
-        <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
-        <meta content="clickberry-extension-here">
-        <meta content="clickberry-extension-here">
-        <style type="text/css"></style>
-        <style type="text/css"></style>
-    <style type="text/css"></style><style type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><meta content="clickberry-extension-here"></head>
-    
-    <body>
-        <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
-        <div class="container">
-            <div class="balloon">
-                <div><span>☺</span>
-                </div>
-                <div><span>H</span>
-                </div>
-                <div><span>A</span>
-                </div>
-                <div><span>P</span>
-                </div>
-                <div><span>P</span>
-                </div>
-                <div><span>Y</span>
-                </div>
+</style>
+<body>
 
-            </div>
-			   <div class="balloon">
-                <div><span>☺</span>
-                </div>
-                <div><span>B</span>
-                </div>
-                <div><span>D</span>
-                </div>
-                <div><span>A</span>
-                </div>
-                <div><span>Y</span>
-                </div>
-                <div><span>!</span>
-                </div>
-            </div>
-             <h1>Komal </h1>
-			 <h2>Spacial wish From Nilesh Balutkar</h2>
-        </div>
-        <script>
-            
-        </script>
-        <script>
-            if (document.location.search.match(/type=embed/gi)) {
-                window.parent.postMessage('resize', "*");
-            }
-        </script>
-    
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
 
-</body></html>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Catering</h1><br>
+      <h5 class="w3-center">Tradition since 1889</h5>
+      <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Menu</h1><br>
+      <h4>Bread Basket</h4>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h4>Honey Almond Granola with Fruits</h4>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h4>Belgian Waffle</h4>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h4>Scrambled eggs</h4>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h4>Blueberry Pancakes</h4>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
