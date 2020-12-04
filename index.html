@@ -68,10 +68,13 @@
 
   <script>
   var  subdomainUrl
+
    function geturl(){
       subdomainUrl=document.referrer
+      var url="https://sando.buildinglink.com:5004/authentication?url="+subdomainUrl
+      console.log('url:', url)
        console.log('subdomainUrl:', subdomainUrl)
-       document.getElementById("abc").href="https://sando.buildinglink.com:5004/authentication?url="+subdomainUrl;
+       document.getElementById("sandoAppId").href=url;
 
       //  document.getElementById("sandoAppId").href=subdomainUrl;
 
