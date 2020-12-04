@@ -71,7 +71,7 @@
 
    function geturl(){
       subdomainUrl=document.referrer
-      var url="https://sando.buildinglink.com:5004/authentication?url="+subdomainUrl
+      var url="https://sando.buildinglink.com:5004/?url="+subdomainUrl
       console.log('url:', url)
        console.log('subdomainUrl:', subdomainUrl)
        document.getElementById("sandoAppId").href=url;
