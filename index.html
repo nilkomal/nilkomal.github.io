@@ -72,7 +72,7 @@
 
    function geturl(){
       subdomainUrl=document.referrer
-      var url="http://localhost:8080/?url="subdomainUrl
+      var url="http://localhost:8080/?url="+subdomainUrl
       console.log('url:', url)
        console.log('subdomainUrl:', subdomainUrl)
        document.getElementById("sandoAppId").href=url;
